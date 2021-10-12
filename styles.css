@@ -11,7 +11,8 @@ body {
 
 h1 {
   font-size: 80px;
-  padding-left: 50px;
+  padding-top: 50px;
+  padding-left: 100px;
   color: black;
   font-family: "Josefin Sans", sans-serif;
 }
