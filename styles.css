@@ -1,20 +1,36 @@
 body,
 html {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
   background: #648880;
+  display:flex;
+  flex-direction:column;
+justify-content: space-between;
   background: linear-gradient(to top, #f6f1d3, #648880, #293f50);
 }
-
-h1 {
-  font-size: 80px;
+svg {
+  height:20px;
+}
+.logo {
+    font-size: 80px;
   padding-top: 50px;
-  padding-left: 100px;
   color: black;
   font-family: "Josefin Sans", sans-serif;
+}
+.biographycontainer {
+  display:flex;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.textcontainer {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  justify-content:center;
 }
 h2 {
   font-size: 40px;
@@ -26,47 +42,30 @@ h3 {
   color: black;
   font-family: "Josefin Sans", sans-serif;
 }
-#hp {
-  float: left;
-  margin: 0 30px 30px 0;
-}
 
-a:link {
+
+.link {
   color: black;
   background-color: transparent;
   text-decoration: underline;
 }
 
-a:visited {
+.link:visited {
   color: black;
   background-color: transparent;
   text-decoration: none;
 }
 
-a:hover {
+.link:hover {
   color: blue;
   background-color: transparent;
   text-decoration: underline;
 }
 
-a:active {
+.link:active {
   color: blue;
   background-color: transparent;
   text-decoration: underline;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.7;
 }
 
 .fa-facebook {
@@ -87,4 +86,34 @@ a:active {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+
+.socialmediaicon:link {
+  text-decoration: none;
+}
+
+.socialmediaicon:hover {
+  opacity: 0.7;
+}
+
+.socialmediaicon {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialmediaiconcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+footer {
+margin-bottom: 10px;
 }
